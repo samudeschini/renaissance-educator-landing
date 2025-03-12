@@ -69,10 +69,10 @@ const Index = () => {
               <div className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">
                 About
               </div>
-              <h2 className="text-3xl md:text-4xl font-medium tracking-tight mb-6">
+              <h2 className="text-3xl md:text-4xl font-medium tracking-tight mb-6 font-playfair">
                 Sam Vuong
               </h2>
-              <p className="text-lg md:text-xl font-light leading-relaxed text-muted-foreground mb-8">
+              <p className="text-lg md:text-xl font-light leading-relaxed text-muted-foreground mb-8 font-playfair">
                 Hi, I'm Sam. I'm a former teacher, who left to work in edtech startups and later crypto. I'm on a mission to spark a new education renaissance.
               </p>
             </div>
@@ -98,7 +98,7 @@ const Index = () => {
                 rel="noopener noreferrer"
                 className="block space-y-2"
               >
-                <h3 className="text-xl md:text-2xl font-medium group-hover:text-primary/90 transition-colors article-link inline-flex items-center gap-1">
+                <h3 className="text-xl md:text-2xl font-medium group-hover:text-primary/90 transition-colors article-link inline-flex items-center gap-1 font-playfair">
                   Why I Left Teaching and Now Work in Crypto
                   <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-70 transition-opacity" />
                 </h3>
@@ -113,7 +113,7 @@ const Index = () => {
                 rel="noopener noreferrer"
                 className="block space-y-2"
               >
-                <h3 className="text-xl md:text-2xl font-medium group-hover:text-primary/90 transition-colors article-link inline-flex items-center gap-1">
+                <h3 className="text-xl md:text-2xl font-medium group-hover:text-primary/90 transition-colors article-link inline-flex items-center gap-1 font-playfair">
                   Can Montessori Work for Middle Schoolers?
                   <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-70 transition-opacity" />
                 </h3>
