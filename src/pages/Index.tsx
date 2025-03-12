@@ -28,7 +28,7 @@ const Index = () => {
             loaded ? "opacity-100" : "opacity-0"
           )}
         >
-          <h1 className="text-lg md:text-xl font-light tracking-tight text-center">
+          <h1 className="text-lg md:text-xl font-medium tracking-tight text-center font-playfair text-renaissance">
             Renaissance Educator
           </h1>
         </header>
