@@ -8,7 +8,14 @@ const Index = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
+    // Set loaded to true after component mounts
     setLoaded(true);
+    // This ensures animations have a chance to complete
+    return () => {
+      // Clean up function to prevent memory leaks
+      setLoaded(false);
+      setImageLoaded(false);
+    };
   }, []);
 
   return (
@@ -17,8 +24,8 @@ const Index = () => {
         {/* Navigation/Header */}
         <header 
           className={cn(
-            "mb-16 opacity-0",
-            loaded && "opacity-100 transition-opacity duration-700"
+            "mb-16 transition-opacity duration-700",
+            loaded ? "opacity-100" : "opacity-0"
           )}
         >
           <h1 className="text-lg md:text-xl font-light tracking-tight text-center">
@@ -31,8 +38,8 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
             <div 
               className={cn(
-                "md:col-span-5 opacity-0", 
-                loaded && "animate-fade-in"
+                "md:col-span-5 transition-opacity duration-700",
+                loaded ? "opacity-100" : "opacity-0"
               )}
             >
               <div className="relative overflow-hidden rounded-2xl bg-secondary/30 aspect-square">
@@ -40,8 +47,8 @@ const Index = () => {
                   src="/lovable-uploads/d28d213b-be69-4493-b021-7bdc768878ce.png"
                   alt="Sam Vuong"
                   className={cn(
-                    "profile-image w-full h-full opacity-0 transition-opacity duration-700 ease-in-out",
-                    imageLoaded && "opacity-100"
+                    "profile-image w-full h-full transition-opacity duration-700 ease-in-out",
+                    imageLoaded ? "opacity-100" : "opacity-0"
                   )}
                   onLoad={() => setImageLoaded(true)}
                 />
@@ -55,8 +62,8 @@ const Index = () => {
 
             <div 
               className={cn(
-                "md:col-span-7 opacity-0", 
-                loaded && "animate-fade-up animation-delay-100"
+                "md:col-span-7 transition-opacity duration-700 delay-100",
+                loaded ? "opacity-100" : "opacity-0"
               )}
             >
               <div className="text-xs uppercase tracking-widest text-muted-foreground mb-3 font-medium">
@@ -75,8 +82,8 @@ const Index = () => {
         {/* Selected Works */}
         <section 
           className={cn(
-            "mb-24 opacity-0", 
-            loaded && "animate-fade-up animation-delay-200"
+            "mb-24 transition-opacity duration-700 delay-200",
+            loaded ? "opacity-100" : "opacity-0"
           )}
         >
           <div className="text-xs uppercase tracking-widest text-muted-foreground mb-6 font-medium">
@@ -119,8 +126,8 @@ const Index = () => {
         {/* Social Links */}
         <footer 
           className={cn(
-            "opacity-0", 
-            loaded && "animate-fade-up animation-delay-300"
+            "transition-opacity duration-700 delay-300",
+            loaded ? "opacity-100" : "opacity-0"
           )}
         >
           <div className="flex justify-center space-x-6">
