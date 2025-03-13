@@ -76,8 +76,19 @@ const Index = () => {
             loaded ? "opacity-100" : "opacity-0"
           )}
         >
-          <div className="bg-secondary/20 rounded-xl p-8 md:p-10 flex-1 flex flex-col">
-            <div className="mb-8 text-center">
+          <div className="relative bg-secondary/20 rounded-xl p-8 md:p-10 flex-1 flex flex-col overflow-hidden">
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+              <img 
+                src="/lovable-uploads/15813e46-158a-482b-b6a7-7240c8c08961.png" 
+                alt="Renaissance Background" 
+                className="w-full h-full object-cover opacity-15" // Very low opacity for readability
+              />
+              <div className="absolute inset-0 bg-white/70"></div> {/* Additional overlay for better contrast */}
+            </div>
+
+            {/* Content with z-index to appear above the background */}
+            <div className="relative z-10 mb-8 text-center">
               <h3 className="text-2xl md:text-3xl font-medium mb-4 font-playfair">
                 Join the Education Renaissance
               </h3>
@@ -85,7 +96,7 @@ const Index = () => {
                 Subscribe to my newsletter for insights on education, technology, and creating a better future for learning. I share thoughts weekly on transforming education.
               </p>
             </div>
-            <div className="flex justify-center w-full overflow-hidden flex-1 flex flex-col items-center">
+            <div className="relative z-10 flex justify-center w-full overflow-hidden flex-1 flex flex-col items-center">
               <iframe 
                 src="https://samvuong.substack.com/embed" 
                 width="480" 
