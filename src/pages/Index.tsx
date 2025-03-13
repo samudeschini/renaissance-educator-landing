@@ -88,8 +88,8 @@ const Index = () => {
             <div className="flex justify-center w-full overflow-hidden flex-1 flex flex-col items-center">
               <iframe 
                 src="https://samvuong.substack.com/embed" 
-                width="100%" 
-                height="320" 
+                width="480" 
+                height="150" 
                 style={{ border: "1px solid #EEE", background: "white" }} 
                 frameBorder="0" 
                 scrolling="no"
