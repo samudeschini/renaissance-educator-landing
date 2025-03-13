@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 const Index = () => {
   const [loaded, setLoaded] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [bannerLoaded, setBannerLoaded] = useState(false);
 
   useEffect(() => {
     // Set loaded to true after component mounts
@@ -15,16 +16,36 @@ const Index = () => {
       // Clean up function to prevent memory leaks
       setLoaded(false);
       setImageLoaded(false);
+      setBannerLoaded(false);
     };
   }, []);
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 flex-1 flex flex-col">
+      {/* Banner Image */}
+      <div className="w-full h-48 md:h-64 lg:h-80 relative overflow-hidden">
+        <div 
+          className={cn(
+            "absolute inset-0 bg-black/30 z-10 transition-opacity duration-700",
+            loaded ? "opacity-100" : "opacity-0"
+          )}
+        ></div>
+        <img
+          src="/lovable-uploads/12e5dcde-ad27-4d4b-bf4f-e66bc954d749.png"
+          alt="Renaissance Banner"
+          className={cn(
+            "w-full h-full object-cover transition-opacity duration-700",
+            bannerLoaded ? "opacity-70" : "opacity-0"
+          )}
+          onLoad={() => setBannerLoaded(true)}
+        />
+      </div>
+
+      <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 flex-1 flex flex-col -mt-24 md:-mt-32 relative z-20">
         {/* Header */}
         <header 
           className={cn(
-            "mb-12 transition-opacity duration-700",
+            "mb-12 transition-opacity duration-700 bg-background/90 p-6 rounded-t-lg",
             loaded ? "opacity-100" : "opacity-0"
           )}
         >
@@ -39,7 +60,7 @@ const Index = () => {
         {/* Profile Section */}
         <section 
           className={cn(
-            "mb-12 transition-opacity duration-700 delay-100",
+            "mb-12 transition-opacity duration-700 delay-100 bg-background/95 p-6",
             loaded ? "opacity-100" : "opacity-0"
           )}
         >
@@ -72,7 +93,7 @@ const Index = () => {
         {/* Newsletter Section - Main Focus */}
         <section 
           className={cn(
-            "flex-1 transition-opacity duration-700 delay-200 flex flex-col",
+            "flex-1 transition-opacity duration-700 delay-200 flex flex-col bg-background/95 p-6",
             loaded ? "opacity-100" : "opacity-0"
           )}
         >
@@ -103,7 +124,7 @@ const Index = () => {
         {/* Selected Posts - Simple Version */}
         <section 
           className={cn(
-            "mt-12 transition-opacity duration-700 delay-300",
+            "mt-12 transition-opacity duration-700 delay-300 bg-background/95 p-6 rounded-b-lg",
             loaded ? "opacity-100" : "opacity-0"
           )}
         >
