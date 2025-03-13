@@ -79,6 +79,40 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Newsletter Section */}
+        <section 
+          className={cn(
+            "mb-24 transition-opacity duration-700 delay-200",
+            loaded ? "opacity-100" : "opacity-0"
+          )}
+        >
+          <div className="text-xs uppercase tracking-widest text-muted-foreground mb-6 font-medium">
+            Newsletter
+          </div>
+          <div className="bg-secondary/20 rounded-xl p-8 md:p-10">
+            <div className="mb-6">
+              <h3 className="text-2xl md:text-3xl font-medium mb-3 font-playfair">
+                Join the Education Renaissance
+              </h3>
+              <p className="text-muted-foreground font-playfair">
+                Subscribe to my newsletter for insights on education, technology, and creating a better future for learning.
+              </p>
+            </div>
+            <div className="flex justify-center w-full overflow-hidden">
+              <iframe 
+                src="https://samvuong.substack.com/embed" 
+                width="100%" 
+                height="320" 
+                style={{ border: "1px solid #EEE", background: "white" }} 
+                frameBorder="0" 
+                scrolling="no"
+                title="Newsletter Signup"
+                className="max-w-lg mx-auto rounded-md"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Selected Works */}
         <section 
           className={cn(
