@@ -34,14 +34,14 @@ const Index = () => {
             Renaissance Educator
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground font-playfair max-w-xl mx-auto">
-            Join me on a mission to spark a new education renaissance
+            It's time to care deeply about what education could be, now.
           </p>
         </header>
 
         {/* Profile Section */}
         <section 
           className={cn(
-            "mb-8 sm:mb-12 transition-opacity duration-700 delay-100",
+            "mb-6 sm:mb-8 transition-opacity duration-700 delay-100",
             loaded ? "opacity-100" : "opacity-0"
           )}
         >
@@ -66,7 +66,7 @@ const Index = () => {
               Sam Vuong
             </h2>
             <p className="text-center text-sm sm:text-base font-light text-muted-foreground mb-4 font-playfair max-w-md px-4">
-              Former teacher, now working in edtech and crypto, sharing insights on education's future.
+              Former teacher turned education innovator, advocating for educational choice.
             </p>
           </div>
         </section>
@@ -83,8 +83,11 @@ const Index = () => {
               <h3 className="text-xl sm:text-2xl md:text-3xl font-medium mb-3 sm:mb-4 font-playfair">
                 Join the Education Renaissance
               </h3>
+              <p className="text-sm sm:text-base text-muted-foreground font-playfair max-w-lg mx-auto mb-3">
+                Every week I share thoughtful, practical insights on how we can build education systems rooted in choice that truly expand what's possible for learning.
+              </p>
               <p className="text-sm sm:text-base text-muted-foreground font-playfair max-w-lg mx-auto">
-                Subscribe to my newsletter for insights on education, technology, and creating a better future for learning. I share thoughts weekly on transforming education.
+                If you believe education should be better and are ready to challenge the way things have always been done, subscribe and be part of the movement to build something better.
               </p>
             </div>
             <div className="flex justify-center w-full overflow-hidden flex-1 flex flex-col items-center">
