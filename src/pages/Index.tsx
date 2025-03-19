@@ -79,14 +79,14 @@ const Index = () => {
           )}
         >
           <div className="bg-secondary/20 rounded-xl p-5 sm:p-8 md:p-10 flex-1 flex flex-col">
-            <div className="mb-5 sm:mb-8 text-center">
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-medium mb-3 sm:mb-4 font-playfair">
+            <div className="mb-5 sm:mb-8">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-medium mb-3 sm:mb-4 font-playfair text-center">
                 Join the Education Renaissance
               </h3>
-              <p className="text-sm sm:text-base text-muted-foreground font-playfair max-w-lg mx-auto mb-3">
+              <p className="text-sm sm:text-base text-muted-foreground font-playfair max-w-lg mb-3">
                 Every week I share thoughtful, practical insights on how we can build education systems rooted in choice that truly expand what's possible for learning.
               </p>
-              <p className="text-sm sm:text-base text-muted-foreground font-playfair max-w-lg mx-auto">
+              <p className="text-sm sm:text-base text-muted-foreground font-playfair max-w-lg">
                 If you believe education should be better and are ready to challenge the way things have always been done, subscribe and be part of the movement to build something better.
               </p>
             </div>
