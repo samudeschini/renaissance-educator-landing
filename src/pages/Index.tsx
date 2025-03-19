@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Linkedin, ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -10,11 +9,8 @@ const Index = () => {
   const isMobile = useIsMobile();
 
   useEffect(() => {
-    // Set loaded to true after component mounts
     setLoaded(true);
-    // This ensures animations have a chance to complete
     return () => {
-      // Clean up function to prevent memory leaks
       setLoaded(false);
       setImageLoaded(false);
     };
@@ -23,7 +19,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-24 flex-1 flex flex-col">
-        {/* Header */}
         <header 
           className={cn(
             "mb-8 sm:mb-12 transition-opacity duration-700",
@@ -38,7 +33,6 @@ const Index = () => {
           </p>
         </header>
 
-        {/* Profile Section */}
         <section 
           className={cn(
             "mb-6 sm:mb-8 transition-opacity duration-700 delay-100",
@@ -71,7 +65,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Newsletter Section - Main Focus */}
         <section 
           className={cn(
             "flex-1 transition-opacity duration-700 delay-200 flex flex-col",
@@ -105,7 +98,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Selected Posts - Simple Version */}
         <section 
           className={cn(
             "mt-8 sm:mt-12 transition-opacity duration-700 delay-300",
@@ -119,13 +111,13 @@ const Index = () => {
           <div className="space-y-4 sm:space-y-5 max-w-lg mx-auto px-2 sm:px-0">
             <article className="group">
               <a 
-                href="https://samvuong.substack.com/p/why-i-left-teaching-and-now-work-in-crypto?r=3hcsl2" 
+                href="https://samvuong.substack.com/p/predictions-on-how-ai-will-transform" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block space-y-2"
               >
                 <h3 className="text-base sm:text-lg md:text-xl font-medium group-hover:text-primary/90 transition-colors article-link inline-flex items-center gap-1 font-playfair text-center mx-auto">
-                  Why I Left Teaching and Now Work in Crypto
+                  Predictions on How AI will Transform K-12 Education
                   <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 opacity-0 group-hover:opacity-70 transition-opacity" />
                 </h3>
                 <div className="w-full h-px bg-border group-hover:bg-primary/20 transition-colors"></div>
@@ -146,10 +138,24 @@ const Index = () => {
                 <div className="w-full h-px bg-border group-hover:bg-primary/20 transition-colors"></div>
               </a>
             </article>
+            
+            <article className="group">
+              <a 
+                href="https://samvuong.substack.com/p/why-i-left-teaching-and-now-work-in-crypto?r=3hcsl2" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block space-y-2"
+              >
+                <h3 className="text-base sm:text-lg md:text-xl font-medium group-hover:text-primary/90 transition-colors article-link inline-flex items-center gap-1 font-playfair text-center mx-auto">
+                  Why I Left Teaching and Now Work in Crypto
+                  <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 opacity-0 group-hover:opacity-70 transition-opacity" />
+                </h3>
+                <div className="w-full h-px bg-border group-hover:bg-primary/20 transition-colors"></div>
+              </a>
+            </article>
           </div>
         </section>
 
-        {/* Footer */}
         <footer 
           className={cn(
             "mt-8 sm:mt-12 transition-opacity duration-700 delay-400",
