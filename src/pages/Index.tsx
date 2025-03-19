@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Linkedin, ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -25,10 +26,10 @@ const Index = () => {
             loaded ? "opacity-100" : "opacity-0"
           )}
         >
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-center font-playfair text-renaissance mb-3 sm:mb-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-center font-garamond text-renaissance mb-3 sm:mb-4">
             Renaissance Educator
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground font-playfair max-w-xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground font-sans max-w-xl mx-auto">
             It's time to care deeply about what education could be, now.
           </p>
         </header>
@@ -56,10 +57,10 @@ const Index = () => {
                 </div>
               )}
             </div>
-            <h2 className="text-lg sm:text-xl md:text-2xl font-medium font-playfair mb-2">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-medium font-garamond mb-2">
               Sam Vuong
             </h2>
-            <p className="text-center text-sm sm:text-base font-light text-muted-foreground mb-4 font-playfair max-w-md px-4">
+            <p className="text-center text-sm sm:text-base font-normal text-muted-foreground mb-4 font-sans max-w-md px-4">
               Former teacher turned education innovator, advocating for educational choice.
             </p>
           </div>
@@ -73,13 +74,13 @@ const Index = () => {
         >
           <div className="bg-secondary/20 rounded-xl p-5 sm:p-8 md:p-10 flex-1 flex flex-col">
             <div className="mb-5 sm:mb-8">
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-medium mb-3 sm:mb-4 font-playfair text-center">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-medium mb-3 sm:mb-4 font-garamond text-center">
                 Join the Education Renaissance
               </h3>
-              <p className="text-sm sm:text-base text-muted-foreground font-playfair max-w-lg mb-3">
+              <p className="text-sm sm:text-base text-muted-foreground font-sans max-w-lg mb-3 text-center">
                 Every week I share thoughtful, practical insights on how we can build education systems rooted in choice that truly expand what's possible for learning.
               </p>
-              <p className="text-sm sm:text-base text-muted-foreground font-playfair max-w-lg">
+              <p className="text-sm sm:text-base text-muted-foreground font-sans max-w-lg text-center">
                 If you believe education should be better and are ready to challenge the way things have always been done, subscribe and be part of the movement to build something better.
               </p>
             </div>
@@ -116,7 +117,7 @@ const Index = () => {
                 rel="noopener noreferrer"
                 className="block space-y-2"
               >
-                <h3 className="text-base sm:text-lg md:text-xl font-medium group-hover:text-primary/90 transition-colors article-link inline-flex items-center gap-1 font-playfair text-center mx-auto">
+                <h3 className="text-base sm:text-lg md:text-xl font-medium group-hover:text-primary/90 transition-colors article-link inline-flex items-center gap-1 font-garamond text-center mx-auto">
                   Predictions on How AI will Transform K-12 Education
                   <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 opacity-0 group-hover:opacity-70 transition-opacity" />
                 </h3>
@@ -131,7 +132,7 @@ const Index = () => {
                 rel="noopener noreferrer"
                 className="block space-y-2"
               >
-                <h3 className="text-base sm:text-lg md:text-xl font-medium group-hover:text-primary/90 transition-colors article-link inline-flex items-center gap-1 font-playfair text-center mx-auto">
+                <h3 className="text-base sm:text-lg md:text-xl font-medium group-hover:text-primary/90 transition-colors article-link inline-flex items-center gap-1 font-garamond text-center mx-auto">
                   Can Montessori Work for Middle Schoolers?
                   <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 opacity-0 group-hover:opacity-70 transition-opacity" />
                 </h3>
@@ -146,7 +147,7 @@ const Index = () => {
                 rel="noopener noreferrer"
                 className="block space-y-2"
               >
-                <h3 className="text-base sm:text-lg md:text-xl font-medium group-hover:text-primary/90 transition-colors article-link inline-flex items-center gap-1 font-playfair text-center mx-auto">
+                <h3 className="text-base sm:text-lg md:text-xl font-medium group-hover:text-primary/90 transition-colors article-link inline-flex items-center gap-1 font-garamond text-center mx-auto">
                   Why I Left Teaching and Now Work in Crypto
                   <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 opacity-0 group-hover:opacity-70 transition-opacity" />
                 </h3>

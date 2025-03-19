@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -22,6 +23,7 @@ export default {
 				sans: ['Inter', 'system-ui', 'sans-serif'],
 				serif: ['Georgia', 'serif'],
 				playfair: ['Playfair Display', 'serif'],
+				garamond: ['EB Garamond', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
